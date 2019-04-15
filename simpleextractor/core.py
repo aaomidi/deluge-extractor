@@ -153,9 +153,9 @@ class Core(CorePluginBase):
 
             # Get the destination path
             dest = os.path.normpath(self.config["extract_path"])
-            if self.config["use_name_folder"]:
-                name = tid_status["name"]
-                dest = os.path.join(dest, name)
+            #if self.config["use_name_folder"]:
+            #    name = tid_status["name"]
+            #    dest = os.path.join(dest, name)
 
             # Override destination if in_place_extraction is set
             # if self.config["in_place_extraction"]:
