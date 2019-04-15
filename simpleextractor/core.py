@@ -158,10 +158,10 @@ class Core(CorePluginBase):
                 dest = os.path.join(dest, name)
 
             # Override destination if in_place_extraction is set
-            if self.config["in_place_extraction"]:
-                name = tid_status["name"]
-                save_path = tid_status["save_path"]
-                dest = os.path.join(save_path,name)
+            # if self.config["in_place_extraction"]:
+            name = tid_status["name"]
+            save_path = tid_status["save_path"]
+            dest = os.path.join(save_path,name)
 
             # Create the destination folder if it doesn't exist
             if not os.path.exists(dest):
